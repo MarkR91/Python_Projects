@@ -1,3 +1,3 @@
 # Python_Projects
-Assorted python program files including:
+Assorted python script/program files including:
 - Phone no. and email address extraction script
