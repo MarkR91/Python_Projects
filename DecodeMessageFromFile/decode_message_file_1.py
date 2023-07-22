@@ -1,29 +1,29 @@
-#Functions
+#Functions:
 
-def triangle(arr):
+def triangle(list):
+
   n=0
   m=1
   i=2
 
-  for x in arr:
-    print(arr[n:m])
+  for x in list:
+    print(list[n:m])
     n=m
     m=m+i
     i=i+1
-    if(arr[n:m]==[]):
+    if(list[n:m]==[]):
       break
 
-f = open("input.txt","r")
+# Beginning of program
+f = open("input.txt","r") #Open text file
 
-arr =[]
+list =[] #Declare list variable as Python technically dosen't use arrays
+
 for x in f:
-   #print(x)
    ln = x.split(" ")
-   arr.append(ln[0])
-   #print(ln[0])
+   list.append(ln)
 
-arr.sort()
-triangle(arr)
-#print("arr=",arr[0:len(arr)])
-#print(f.read(5))
+list.sort()
+triangle(list)
+
 f.close()
