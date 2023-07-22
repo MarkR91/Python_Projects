@@ -1,13 +1,6 @@
-#f = open("demofile.txt", "r")
+#Functions
 
 def triangle(arr):
-
-  '''arr= [1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14]'''
-
-  #print(arr[0:1])
-  #print(arr[1:3])
-  #print(arr[3:6])
-  #print(arr[6:10])...
   n=0
   m=1
   i=2
@@ -20,7 +13,7 @@ def triangle(arr):
     if(arr[n:m]==[]):
       break
 
-f = open("D:\Downloads\cq_input.txt","r")
+f = open("input.txt","r")
 
 arr =[]
 for x in f:
