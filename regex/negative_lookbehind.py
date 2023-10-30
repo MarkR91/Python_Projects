@@ -12,7 +12,10 @@ lines = [
     "Last line has ifdf",
 ]
 
-pattern = re.compile(r"^((?!.*ifdf).*)$")
+
+pattern = re.compile(r"^.*(?<!ifdf)$")
+# pattern = re.compile(r"^((?!.*ifdf).*)$")
+
 
 for line in lines:
     if pattern.match(line):
